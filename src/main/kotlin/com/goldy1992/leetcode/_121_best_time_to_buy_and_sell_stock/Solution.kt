@@ -1,4 +1,4 @@
-package org.example.com.goldy1992.leetcode.buy_sell_stock
+package com.goldy1992.leetcode._121_best_time_to_buy_and_sell_stock
 
 class Solution {
     fun maxProfit(prices: IntArray): Int {
