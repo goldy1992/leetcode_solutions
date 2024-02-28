@@ -13,7 +13,7 @@ class Tree {
 }
 
 
-class RandomizedSet() {
+class RandomizedSet {
 
     val tree : Tree = Tree()
 
@@ -114,39 +114,25 @@ class RandomizedSet() {
             }
         } else {
             // find replacement Node
-            var foundReplacement= false
-            var replaceParent = currentStruct
-            var replaceParentLeft = false
-            var replaceStruct : Struct = currentStruct.left!!
-            while (!foundReplacement) {
-                if (replaceStruct.right != null) {
-                    replaceParent = replaceStruct
-                    replaceParentLeft = false
-
-                    replaceStruct = replaceStruct.right!!
-                } else if (replaceStruct.left != null) {
-                    replaceParent = replaceStruct
-                    replaceParentLeft = true
-                    replaceStruct = replaceStruct.left!!
-                } else {
-                    if (replaceParentLeft) {
-                        replaceParent.left = null
-                    }
-                    else {
-                        replaceParent.right = null
-                    }
-                    foundReplacement = true
-                }
+            var replaceNode: Struct?
+            if (currentStruct.right != null) {
+                // replace with right node
+                replaceNode = currentStruct.right!!
+                replaceNode.left = currentStruct.left!!
+            } else {
+                // replace with left node
+                replaceNode = currentStruct.left!!
+                replaceNode.right = currentStruct.right!!
             }
 
             if (parent != null) {
                 if (parentLeft) {
-                    parent.left = replaceStruct
+                    parent.left = replaceNode
                 } else {
-                    parent.right = replaceStruct
+                    parent.right = replaceNode
                 }
             } else {
-                tree.root = replaceStruct
+                tree.root = replaceNode
             }
         }
 
@@ -189,7 +175,6 @@ class RandomizedSet() {
         val toRetrieveIdx = Random.nextInt(1, tree.size)
         return traverse(tree.root!!, Traversal(0, -1), toRetrieveIdx).value
     }
-
 }
 
 /**
