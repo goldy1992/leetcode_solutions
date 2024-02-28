@@ -172,7 +172,7 @@ class RandomizedSet {
         if (tree.size == 1) {
             return tree.root!!.num
         }
-        val toRetrieveIdx = Random.nextInt(1, tree.size)
+        val toRetrieveIdx = Random.nextInt(1, tree.size + 1)
         return traverse(tree.root!!, Traversal(0, -1), toRetrieveIdx).value
     }
 }
