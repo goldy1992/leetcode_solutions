@@ -16,7 +16,7 @@ class RandomizedSetTest {
         const val REMOVE = "remove"
         const val RANDOM = "getRandom"
         const val INPUT_DELIMITER = ","
-        const val TEST_CLASS_RES_DIR = "src/test/resources/_380_insert_delete_random_o1"
+        const val TEST_CLASS_RES_DIR = "src/test/resources/_134_gas_station"
     }
     @Test
     fun testExample2() {
