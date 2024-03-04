@@ -20,4 +20,11 @@ class SolutionTest {
         val result = solution.trap(input)
         assertEquals(expected, result)
     }
+    @Test
+    fun testExample3() {
+        val input = intArrayOf(0,2,0)
+        val expected = 0
+        val result = solution.trap(input)
+        assertEquals(expected, result)
+    }
 }
