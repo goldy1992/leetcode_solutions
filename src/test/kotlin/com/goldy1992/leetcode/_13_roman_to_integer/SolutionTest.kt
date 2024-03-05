@@ -21,4 +21,21 @@ class SolutionTest {
         val result = solution.romanToInt(input)
         assertEquals(expected, result)
     }
+
+    @Test
+    fun testExample3() {
+        val input = "MCMXCIV"
+        val expected = 1994
+        val result = solution.romanToInt(input)
+        assertEquals(expected, result)
+    }
+
+
+    @Test
+    fun testExample4() {
+        val input = "MCMXCIVI"
+        val expected = 1995
+        val result = solution.romanToInt(input)
+        assertEquals(expected, result)
+    }
 }
