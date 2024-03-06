@@ -21,4 +21,12 @@ class SolutionTest {
         val result = solution.longestCommonPrefix(input)
         assertEquals(expected, result)
     }
+    @Test
+    fun testExample3() {
+        val input = arrayOf("racecar")
+        val expected = "racecar"
+        val result = solution.longestCommonPrefix(input)
+        assertEquals(expected, result)
+    }
+
 }
