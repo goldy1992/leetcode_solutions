@@ -31,4 +31,20 @@ class SolutionTest {
         val result = solution.convert(input, numRows)
         assertEquals(expected, result)
     }
+    @Test
+    fun testExample4() {
+        val input = "ABABAB"
+        val expected = "AAABBB"
+        val numRows = 2
+        val result = solution.convert(input, numRows)
+        assertEquals(expected, result)
+    }
+    @Test
+    fun testExample5() {
+        val input = "AB"
+        val expected = "AB"
+        val numRows = 1
+        val result = solution.convert(input, numRows)
+        assertEquals(expected, result)
+    }
 }
