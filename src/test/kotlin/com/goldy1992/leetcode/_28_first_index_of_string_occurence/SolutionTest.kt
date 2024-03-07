@@ -23,4 +23,12 @@ class SolutionTest {
         val result = solution.strStr(haystack, needle)
         assertEquals(expected, result)
     }
+    @Test
+    fun textExample3() {
+        val haystack = "leetcodeleeto"
+        val needle = "leeto"
+        val expected = 8
+        val result = solution.strStr(haystack, needle)
+        assertEquals(expected, result)
+    }
 }
