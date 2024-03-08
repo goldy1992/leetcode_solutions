@@ -13,7 +13,6 @@ class Solution {
                 numWords++
                 currentCharacterCount += word.length
             } else {
-                // TODO format current line
                 val lineToAdd = createLineFullJustified(maxWidth, currentCharacterCount, numWords, currentLineWordList)
                 toReturn.add(lineToAdd)
 
