@@ -21,4 +21,11 @@ class SolutionTest {
         val result = solution.isSubsequence(s, t)
         assertFalse(result)
     }
+    @Test
+    fun testExample3() {
+        val s = ""
+        val t = "ahbgdc"
+        val result = solution.isSubsequence(s, t)
+        assertTrue(result)
+    }
 }
