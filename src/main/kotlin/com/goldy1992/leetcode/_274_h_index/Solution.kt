@@ -1,4 +1,4 @@
-package org.example.com.goldy1992.leetcode.h_index
+package com.goldy1992.leetcode.h_index
 
 class Solution {
 

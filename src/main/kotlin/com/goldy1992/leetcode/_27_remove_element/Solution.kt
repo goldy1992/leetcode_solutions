@@ -1,4 +1,4 @@
-package org.example.com.goldy1992.leetcode.remove_element
+package com.goldy1992.leetcode.remove_element
 
 class Solution {
     fun removeElement(nums: IntArray, value : Int): Int {

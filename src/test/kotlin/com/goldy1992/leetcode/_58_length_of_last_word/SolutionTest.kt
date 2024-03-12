@@ -1,6 +1,6 @@
 package com.goldy1992.leetcode._58_length_of_last_word
 
-import org.example.com.goldy1992.leetcode._58_length_of_last_word.Solution
+import com.goldy1992.leetcode._58_length_of_last_word.Solution
 import org.junit.jupiter.api.Assertions.*
 import kotlin.test.Test
 

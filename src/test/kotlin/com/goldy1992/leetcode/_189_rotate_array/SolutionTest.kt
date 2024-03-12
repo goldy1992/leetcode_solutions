@@ -1,6 +1,6 @@
 package com.goldy1992.leetcode._189_rotate_array
 
-import org.example.com.goldy1992.leetcode._189_rotate_array.Solution
+import com.goldy1992.leetcode._189_rotate_array.Solution
 import org.junit.jupiter.api.Assertions.*
 import kotlin.test.Test
 

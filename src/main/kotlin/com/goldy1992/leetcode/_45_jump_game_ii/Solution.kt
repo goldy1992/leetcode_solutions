@@ -1,4 +1,4 @@
-package org.example.com.goldy1992.leetcode._45_jump_game_ii
+package com.goldy1992.leetcode._45_jump_game_ii
 
 class Solution {
 

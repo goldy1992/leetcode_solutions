@@ -1,6 +1,6 @@
 package com.goldy1992.leetcode._135_candy
 
-import org.example.com.goldy1992.leetcode._135_candy.Solution
+import com.goldy1992.leetcode._135_candy.Solution
 import org.junit.jupiter.api.Assertions.*
 import kotlin.test.Test
 

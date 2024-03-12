@@ -1,6 +1,6 @@
 package com.goldy1992.leetcode._169_majority_element
 
-import org.example.com.goldy1992.leetcode.majority_element.Solution
+import com.goldy1992.leetcode.majority_element.Solution
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 

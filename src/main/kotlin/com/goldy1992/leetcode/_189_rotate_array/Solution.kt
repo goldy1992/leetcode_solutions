@@ -1,4 +1,4 @@
-package org.example.com.goldy1992.leetcode._189_rotate_array
+package com.goldy1992.leetcode._189_rotate_array
 
 class Solution {
     fun rotate(nums: IntArray, k: Int) {

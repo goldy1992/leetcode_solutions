@@ -1,4 +1,4 @@
-package org.example.com.goldy1992.leetcode.majority_element
+package com.goldy1992.leetcode.majority_element
 
 class Solution {
 

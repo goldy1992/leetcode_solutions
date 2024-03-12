@@ -1,6 +1,6 @@
 package com.goldy1992.leetcode._274_h_index
 
-import org.example.com.goldy1992.leetcode.h_index.Solution
+import com.goldy1992.leetcode.h_index.Solution
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 

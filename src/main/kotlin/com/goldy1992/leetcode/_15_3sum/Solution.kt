@@ -1,25 +1,37 @@
 package com.goldy1992.leetcode._15_3sum
 
 class Solution {
+    /**
+     * Still inefficient compared to the majority of correct solutions
+     */
     fun threeSum(nums: IntArray): List<List<Int>> {
-        val toReturn = mutableListOf<List<Int>>()
+        val toReturn = mutableSetOf<List<Int>>()
         if (nums.size == 3) {
             if (nums[0] + nums[1] + nums[2] == 0) {
                 toReturn.add(listOf(nums[0], nums[1], nums[2]))
             }
-            return toReturn
+            return toReturn.toList()
         }
+        val sortedNums = nums.sorted()
+        var pFixed = 0
+        while (pFixed < sortedNums.size) {
+            var pStart = if (pFixed == 0) 1 else 0
+            var pEnd = sortedNums.size - (if (pFixed == sortedNums.size - 1) 2 else 1)
 
-        var pfirst = 0
-        var pLast = nums.size - 1
-        var pMiddle = 1
-        while (pMiddle < pLast) {
-            val sum = nums[pfirst] + nums[pMiddle] + nums[pLast]
-            if (sum == 0) {
-                toReturn.add(listOf( pfirst, pLast, pMiddle))
+            while (pStart < pEnd) {
+                val sum = sortedNums[pFixed] + sortedNums[pStart] + sortedNums[pEnd]
+                if (sum == 0) {
+                    toReturn.add(listOf(sortedNums[pFixed], sortedNums[pStart], sortedNums[pEnd]).sorted())
+                    pStart += if (pStart + 1 == pFixed) 2 else 1
+                } else if (sum > 0) {
+                    pEnd -= if (pEnd - 1 == pFixed) 2 else 1
+                } else {
+                    pStart += if (pStart + 1 == pFixed) 2 else 1
+                }
+
             }
-            pMiddle++
+            pFixed++
         }
-        return toReturn
+        return toReturn.toList()
     }
 }

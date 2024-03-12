@@ -1,4 +1,4 @@
-package org.example.com.goldy1992.leetcode._42_trapping_rain_water
+package com.goldy1992.leetcode._42_trapping_rain_water
 
 import kotlin.math.min
 

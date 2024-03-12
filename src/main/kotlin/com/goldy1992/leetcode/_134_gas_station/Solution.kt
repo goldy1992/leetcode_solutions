@@ -1,4 +1,4 @@
-package org.example.com.goldy1992.leetcode._134_gas_station
+package com.goldy1992.leetcode._134_gas_station
 
 class Solution {
     data class Candidate(val energy : Int,

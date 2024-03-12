@@ -1,4 +1,4 @@
-package org.example.com.goldy1992.leetcode.merge_sorted_array
+package com.goldy1992.leetcode.merge_sorted_array
 
 import kotlin.math.max
 

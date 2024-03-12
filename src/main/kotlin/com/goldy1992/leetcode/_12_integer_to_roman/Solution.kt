@@ -1,4 +1,4 @@
-package org.example.com.goldy1992.leetcode._12_integer_to_roman
+package com.goldy1992.leetcode._12_integer_to_roman
 
 class Solution {
 

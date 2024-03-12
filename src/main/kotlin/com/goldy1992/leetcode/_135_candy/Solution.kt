@@ -1,4 +1,4 @@
-package org.example.com.goldy1992.leetcode._135_candy
+package com.goldy1992.leetcode._135_candy
 
 class Solution {
     fun candy(ratings: IntArray): Int {

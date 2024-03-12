@@ -1,6 +1,6 @@
 package com.goldy1992.leetcode._68_text_justification
 
-import org.example.com.goldy1992.leetcode._68_text_justification.Solution
+import com.goldy1992.leetcode._68_text_justification.Solution
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 

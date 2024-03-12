@@ -1,6 +1,6 @@
 package com.goldy1992.leetcode._12_integer_to_roman
 
-import org.example.com.goldy1992.leetcode._12_integer_to_roman.Solution
+import com.goldy1992.leetcode._12_integer_to_roman.Solution
 import org.junit.jupiter.api.Assertions.*
 import kotlin.test.Test
 

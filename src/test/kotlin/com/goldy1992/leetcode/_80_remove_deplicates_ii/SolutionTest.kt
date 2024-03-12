@@ -1,6 +1,6 @@
 package com.goldy1992.leetcode._80_remove_deplicates_ii
 
-import org.example.com.goldy1992.leetcode._80_remove_deplicates_ii.Solution
+import com.goldy1992.leetcode._80_remove_deplicates_ii.Solution
 import org.junit.jupiter.api.Assertions.*
 import kotlin.test.Test
 

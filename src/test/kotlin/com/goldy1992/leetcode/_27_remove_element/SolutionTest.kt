@@ -1,6 +1,6 @@
 package com.goldy1992.leetcode._27_remove_element
 
-import org.example.com.goldy1992.leetcode.remove_element.Solution
+import com.goldy1992.leetcode.remove_element.Solution
 import org.junit.jupiter.api.Assertions.*
 import kotlin.test.Test
 

@@ -1,4 +1,4 @@
-package org.example.com.goldy1992.leetcode._80_remove_deplicates_ii
+package com.goldy1992.leetcode._80_remove_deplicates_ii
 
 class Solution {
     fun removeDuplicates(nums: IntArray): Int {

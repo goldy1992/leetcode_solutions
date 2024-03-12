@@ -1,6 +1,6 @@
 package com.goldy1992.leetcode.merge_sorted_array
 
-import org.example.com.goldy1992.leetcode.merge_sorted_array.Solution
+import com.goldy1992.leetcode.merge_sorted_array.Solution
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 import kotlin.test.assertContentEquals

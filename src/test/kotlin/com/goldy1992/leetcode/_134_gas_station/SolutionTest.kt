@@ -1,7 +1,7 @@
 package com.goldy1992.leetcode._134_gas_station
 
 import com.goldy1992.leetcode._380_insert_delete_random_o1.RandomizedSetTest
-import org.example.com.goldy1992.leetcode._134_gas_station.Solution
+import com.goldy1992.leetcode._134_gas_station.Solution
 import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 import java.io.BufferedReader

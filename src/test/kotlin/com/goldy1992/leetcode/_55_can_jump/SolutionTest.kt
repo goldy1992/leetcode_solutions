@@ -1,6 +1,6 @@
 package com.goldy1992.leetcode._55_can_jump
 
-import org.example.com.goldy1992.leetcode._55_can_jump.Solution
+import com.goldy1992.leetcode._55_can_jump.Solution
 import org.junit.jupiter.api.Assertions.*
 import kotlin.test.Test
 

@@ -1,6 +1,6 @@
 package com.goldy1992.leetcode._238_product_of_array_except_self
 
-import org.example.com.goldy1992.leetcode._238_product_of_array_except_self.Solution
+import com.goldy1992.leetcode._238_product_of_array_except_self.Solution
 import org.junit.jupiter.api.Assertions.*
 import org.junit.jupiter.api.Test
 

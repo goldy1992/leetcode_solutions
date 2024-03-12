@@ -1,4 +1,4 @@
-package org.example.com.goldy1992.leetcode._58_length_of_last_word
+package com.goldy1992.leetcode._58_length_of_last_word
 
 class Solution {
     fun lengthOfLastWord(s: String): Int {

@@ -1,6 +1,6 @@
 package com.goldy1992.leetcode._14_longest_common_prefix
 
-import org.example.com.goldy1992.leetcode._14_longest_common_prefix.Solution
+import com.goldy1992.leetcode._14_longest_common_prefix.Solution
 import org.junit.jupiter.api.Assertions.*
 import kotlin.test.Test
 
