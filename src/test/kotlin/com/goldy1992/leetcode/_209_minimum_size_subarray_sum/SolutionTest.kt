@@ -30,4 +30,13 @@ class SolutionTest {
         val result = solution.minSubArrayLen(target, input)
         assertEquals(expected, result)
     }
+
+    @Test
+    fun testExample4() {
+        val input = intArrayOf(12,28,83,4,25,26,25,2,25,25,25,12)
+        val target = 213
+        val expected = 8
+        val result = solution.minSubArrayLen(target, input)
+        assertEquals(expected, result)
+    }
 }
