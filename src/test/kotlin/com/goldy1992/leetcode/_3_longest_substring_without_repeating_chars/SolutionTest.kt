@@ -27,4 +27,11 @@ class SolutionTest {
         val result = solution.lengthOfLongestSubstring(input)
         assertEquals(expected, result)
     }
+    @Test
+    fun testExample4() {
+        val input = "au"
+        val expected = 2
+        val result = solution.lengthOfLongestSubstring(input)
+        assertEquals(expected, result)
+    }
 }
