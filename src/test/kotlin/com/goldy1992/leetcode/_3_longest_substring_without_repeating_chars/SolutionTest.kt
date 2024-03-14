@@ -1,7 +1,6 @@
 package com.goldy1992.leetcode._3_longest_substring_without_repeating_chars
 
-import org.example.com.goldy1992.leetcode._3_longest_substring_without_repeating_chars.Solution
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import kotlin.test.Test
 
 class SolutionTest {
