@@ -1,10 +1,15 @@
 package com.goldy1992.leetcode._76_minimum_window_substring
 
 class Solution {
+
     fun minWindow(s: String, t: String): String {
-        var currentMinWindowSize = s.length
+        if (s.length == 1) {
+            return if (s == t) s else ""
+        } else if (t.length > s.length) {
+            return ""
+        }
+        var currentMinWindowSize = s.length + 1
         var currentMinWindow = ""
-        // create set of t
         val tMap = mutableMapOf<Char, Int>()
         for (c in t) {
             if (tMap.containsKey(c)) {
@@ -13,56 +18,73 @@ class Solution {
                 tMap[c] = 1
             }
         }
-
-        var currentIdx = 0
-        while (currentIdx <= s.length - t.length) {
-           if (tMap.containsKey(s[currentIdx])) {
-               // iterate from currentIndex
-               var numOfFinds = 0
-               val iterationStart = currentIdx
-               var currentSubIdx = currentIdx
-               val tMapCopy = tMap.toMutableMap()
-               var setNextIterStartPoint = false
-
-               while (numOfFinds < t.length && currentSubIdx < s.length) {
-                   if (tMapCopy.containsKey(s[currentSubIdx])) {
-                       if (tMapCopy[s[currentSubIdx]]!! > 0) {
-                           tMapCopy[s[currentSubIdx]] = tMapCopy[s[currentSubIdx]]!! - 1
-                           numOfFinds++
-
-                           if (numOfFinds == 2 && !setNextIterStartPoint) {
-                               currentIdx = currentSubIdx
-                               setNextIterStartPoint = true
-                           }
-
-                           if (numOfFinds == t.length) {
-                               if (currentSubIdx - iterationStart < currentMinWindowSize) {
-                                   currentMinWindowSize = currentSubIdx - iterationStart
-                                   currentMinWindow = s.substring(iterationStart, currentSubIdx + 1)
-                                   if (currentIdx == currentSubIdx && !setNextIterStartPoint) {
-                                       currentIdx++
-                                   }
-                               }
-                           }
-                       } else {
-                           if (numOfFinds == 1) {
-                               currentIdx = currentSubIdx
-                               setNextIterStartPoint = true
-                           }
-                       }
-                   }
-                   currentSubIdx++
-               }
-
-               if (currentIdx == iterationStart) {
-                   currentIdx++
-               }
-
-           } else {
-               currentIdx++
-           }
+        var leftIdx = 0
+        var rightIdx = -1
+        var moveRight = true
+        val mMap = mutableMapOf<Char, Int>()
+        for (k in tMap.keys) {
+            mMap[k] = 0
         }
+        val andOp : Long = (1L shl (tMap.size + 1)) -1L
+        var currentBitOp : Long = (1L shl tMap.size)
+        while (leftIdx < rightIdx || rightIdx < s.length -1) {
+            if (moveRight) {
+                var found = false
+                while (!found && rightIdx < s.length -1 && leftIdx < s.length -1  ) {
+                    rightIdx++
+                    if (mMap.containsKey(s[rightIdx])) {
 
+                        mMap[s[rightIdx]] = mMap[s[rightIdx]]!! + 1
+                        if (mMap[s[rightIdx]]!! == tMap[s[rightIdx]]!!) {
+                            val keyIdx = tMap.keys.indexOf(s[rightIdx])
+                            currentBitOp += 1L shl keyIdx
+                        }
+                    }
+
+                    if ((currentBitOp and andOp) == andOp) {
+                        val newString = s.substring(leftIdx, rightIdx + 1)
+                        if (newString.length < currentMinWindowSize) {
+                            currentMinWindowSize = newString.length
+                            currentMinWindow = newString
+                        }
+
+                        found = true
+
+                    }
+                    moveRight = false
+                }
+            } else if (leftIdx < rightIdx) {
+                if (mMap.containsKey(s[leftIdx])) {
+                    mMap[s[leftIdx]] = mMap[s[leftIdx]]!! - 1
+                    if (mMap[s[leftIdx]]!! == tMap[s[leftIdx]]!! -1) {
+                        val keyIdx = tMap.keys.indexOf(s[leftIdx])
+                        currentBitOp -= 1L shl keyIdx
+                    }
+                }
+                leftIdx++
+                var found = false
+                while (!found && leftIdx < rightIdx) {
+                    if (mMap.containsKey(s[leftIdx])) {
+                       found = true
+                    } else {
+                        leftIdx++
+                    }
+                }
+                if ((currentBitOp and andOp) == andOp) {
+                    val newString = s.substring(leftIdx, rightIdx + 1)
+                    if (newString.length < currentMinWindowSize) {
+                        currentMinWindowSize = newString.length
+                        currentMinWindow = newString
+                    }
+                } else {
+                    moveRight = rightIdx < s.length -1
+                }
+
+            } else {
+                moveRight = rightIdx < s.length -1
+            }
+        }
         return currentMinWindow
     }
+
 }
