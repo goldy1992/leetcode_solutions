@@ -38,4 +38,21 @@ class SolutionTest {
         val result = solution.isValidSudoku(input)
         assertFalse(result)
     }
+
+    @Test
+    fun testExample3() {
+        val input = arrayOf(
+            charArrayOf('.','.','.','.','5','.','.','1','.'),
+            charArrayOf('.','4','.','3','.','.','.','.','.'),
+            charArrayOf('.','.','.','.','.','3','.','.','1'),
+            charArrayOf('8','.','.','.','.','.','.','2','.'),
+            charArrayOf('.','.','2','.','7','.','.','.','.'),
+            charArrayOf('.','1','5','.','.','.','.','.','.'),
+            charArrayOf('.','.','.','.','.','2','.','.','.'),
+            charArrayOf('.','2','.','9','.','.','.','.','.'),
+            charArrayOf('.','.','4','.','.','.','.','.','.')
+        )
+        val result = solution.isValidSudoku(input)
+        assertFalse(result)
+    }
 }
