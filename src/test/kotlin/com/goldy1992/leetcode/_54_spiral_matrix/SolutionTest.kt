@@ -36,4 +36,21 @@ class SolutionTest {
             assertEquals(expected[n], result[n])
         }
     }
+
+    @Test
+    fun testExample3() {
+        val input = arrayOf(
+            intArrayOf( 1, 2, 3, 4),
+            intArrayOf(12,13,14, 5),
+            intArrayOf(11,16,15, 6),
+            intArrayOf(10, 9, 8, 7)
+        )
+        val expected = listOf(1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16)
+        val result = solution.spiralOrder(input)
+
+        assertEquals(expected.size, result.size)
+        for (n in expected.indices) {
+            assertEquals(expected[n], result[n])
+        }
+    }
 }
