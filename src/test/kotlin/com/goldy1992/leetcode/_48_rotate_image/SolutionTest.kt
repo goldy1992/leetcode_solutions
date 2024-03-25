@@ -53,4 +53,24 @@ class SolutionTest {
             }
         }
     }
+
+    @Test
+    fun testExample3() {
+        val input = arrayOf(
+            intArrayOf(5),
+        )
+        val expected = arrayOf(
+            intArrayOf(5),
+        )
+
+        solution.rotate(input)
+        assertEquals(expected.size, input.size)
+        assertEquals(expected[0].size, input[0].size)
+
+        for (i in expected.indices) {
+            for (j in expected.indices) {
+                assertEquals(expected[i][j], input[i][j])
+            }
+        }
+    }
 }
