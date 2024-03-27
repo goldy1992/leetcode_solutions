@@ -27,4 +27,12 @@ class SolutionTest {
         val result = solution.isIsomorphic(s, t)
         assertTrue(result)
     }
+
+    @Test
+    fun testExample4() {
+        val s = "badc"
+        val t = "baba"
+        val result = solution.isIsomorphic(s, t)
+        assertFalse(result)
+    }
 }
