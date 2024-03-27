@@ -48,4 +48,22 @@ class SolutionTest {
             }
         }
     }
+
+    @Test
+    fun testExample3() {
+        val board = arrayOf(
+            intArrayOf(0,0),
+        )
+
+        val expected = arrayOf(
+            intArrayOf(0,0)
+        )
+
+        solution.gameOfLife(board)
+        for (row in expected.indices) {
+            for (col in expected[0].indices) {
+                assertEquals(expected[row][col], board[row][col])
+            }
+        }
+    }
 }
