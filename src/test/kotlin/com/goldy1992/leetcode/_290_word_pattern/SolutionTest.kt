@@ -27,4 +27,18 @@ class SolutionTest {
         val result = solution.wordPattern(pattern, s)
         assertFalse(result)
     }
+    @Test
+    fun testExample4() {
+        val pattern = "abba"
+        val s = "dog dog dog dog"
+        val result = solution.wordPattern(pattern, s)
+        assertFalse(result)
+    }
+    @Test
+    fun testExample5() {
+        val pattern = "aaa"
+        val s = "aa aa aa aa"
+        val result = solution.wordPattern(pattern, s)
+        assertFalse(result)
+    }
 }
