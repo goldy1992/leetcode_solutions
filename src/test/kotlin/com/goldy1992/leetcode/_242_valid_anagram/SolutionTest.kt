@@ -20,4 +20,12 @@ class SolutionTest {
         val result = solution.isAnagram(s, t)
         assertFalse(result)
     }
+
+    @Test
+    fun testExample3() {
+        val s = "abcdefghijklmnopqrstuvwxzy"
+        val t = s.reversed()
+        val result = solution.isAnagram(s, t)
+        assertTrue(result)
+    }
 }
