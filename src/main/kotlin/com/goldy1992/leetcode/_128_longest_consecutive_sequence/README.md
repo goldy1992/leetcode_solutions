@@ -17,5 +17,5 @@ Output: 9
 ```
 
 ## Constraints:
-- `0 <= nums.length <= 105`
-- `-109 <= nums[i] <= 109`
+- <code>0 <= nums.length <= 10<sup>5</sup></code>
+- <code>-10<sup>9</sup> <= nums[i] <= 10<sup>9</sup></code>

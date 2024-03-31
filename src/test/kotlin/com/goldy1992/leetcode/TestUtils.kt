@@ -16,6 +16,11 @@ object TestUtils {
         return string.split(INPUT_DELIMITER).toTypedArray()
     }
 
+    fun readFileAsIntArray(filePath: String) : IntArray {
+        val strArray = readFileAsStringArray(filePath)
+        return strArray.map { it.toInt() }.toIntArray()
+    }
+
     fun buildFilePath(dir: String, fileName: String) : String {
         return dir + File.separator + fileName
     }
