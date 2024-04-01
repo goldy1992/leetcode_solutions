@@ -36,6 +36,14 @@ class SolutionTest {
         assertResult(expected, result)
     }
 
+    @Test
+    fun testExample5() {
+        val nums = intArrayOf(0,1,2,3,4,5)
+        val expected = arrayOf("0->5")
+        val result = solution.summaryRanges(nums)
+        assertResult(expected, result)
+    }
+
     private fun assertResult(expected: Array<String>, actual: List<String>) {
         assertEquals(expected.size, actual.size)
         for (s in expected) {
