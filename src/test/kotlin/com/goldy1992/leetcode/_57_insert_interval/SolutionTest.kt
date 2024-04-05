@@ -38,4 +38,6 @@ class SolutionTest {
         val result = solution.insert(intervals, newInterval)
         assertArrayEquals(expected, result)
     }
+
+
 }
