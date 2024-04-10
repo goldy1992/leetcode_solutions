@@ -40,4 +40,60 @@ class SolutionTest {
     }
 
 
+
+
+    @Test
+    fun testExample3() {
+        val intervals = arrayOf(
+            intArrayOf(1,5),
+        )
+        val newInterval = intArrayOf(2,7)
+        val expected = arrayOf(
+            intArrayOf(1,7),
+        )
+        val result = solution.insert(intervals, newInterval)
+        assertArrayEquals(expected, result)
+    }
+
+    @Test
+    fun testExample4() {
+        val intervals = arrayOf(
+            intArrayOf(1,5),
+        )
+        val newInterval = intArrayOf(6,7)
+        val expected = arrayOf(
+            intArrayOf(1,5),
+            intArrayOf(6,7)
+        )
+        val result = solution.insert(intervals, newInterval)
+        assertArrayEquals(expected, result)
+    }
+   @Test
+    fun testExample5() {
+        val intervals = arrayOf(
+            intArrayOf(6,7),
+        )
+        val newInterval = intArrayOf(1,5)
+        val expected = arrayOf(
+            intArrayOf(1,5),
+            intArrayOf(6,7)
+        )
+        val result = solution.insert(intervals, newInterval)
+        assertArrayEquals(expected, result)
+    }
+
+   @Test
+    fun testExample6() {
+        val intervals = arrayOf(
+            intArrayOf(1,5),
+        )
+        val newInterval = intArrayOf(2,3)
+        val expected = arrayOf(
+            intArrayOf(1,5)
+        )
+        val result = solution.insert(intervals, newInterval)
+        assertArrayEquals(expected, result)
+    }
+
+
 }
