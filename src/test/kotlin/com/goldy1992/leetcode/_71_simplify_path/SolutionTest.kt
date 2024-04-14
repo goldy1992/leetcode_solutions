@@ -27,4 +27,41 @@ class SolutionTest {
         val result = solution.simplifyPath(path)
         assertEquals(expected, result)
     }
+    @Test
+    fun testExample4() {
+        val path = "/a/./b/../../c/"
+        val expected = "/c"
+        val result = solution.simplifyPath(path)
+        assertEquals(expected, result)
+    }
+    @Test
+    fun testExample5() {
+        val path = "/a//b////c/d//././/.."
+        val expected = "/a/b/c"
+        val result = solution.simplifyPath(path)
+        assertEquals(expected, result)
+    }
+    @Test
+    fun testExample6() {
+        val path = "/."
+        val expected = "/"
+        val result = solution.simplifyPath(path)
+        assertEquals(expected, result)
+    }
+    @Test
+    fun testExample7() {
+        val path = "/home/of/foo/../../bar/../../is/./here/."
+        val expected = "/is/here"
+        val result = solution.simplifyPath(path)
+        assertEquals(expected, result)
+    }
+    @Test
+    fun testExample8() {
+        val path = "///TJbrd/owxdG//"
+        val expected = "/TJbrd/owxdG"
+        val result = solution.simplifyPath(path)
+        assertEquals(expected, result)
+    }
+
+
 }
