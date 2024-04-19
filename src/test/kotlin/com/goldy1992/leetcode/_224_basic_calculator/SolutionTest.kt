@@ -28,4 +28,20 @@ class SolutionTest {
         val result = solution.calculate(input)
         assertEquals(expected, result)
     }
+
+    @Test
+    fun testExample4() {
+        val input = "(1+(44+5+2)-3)+(6+8)"
+        val expected = 63
+        val result = solution.calculate(input)
+        assertEquals(expected, result)
+    }
+
+    @Test
+    fun testExample5() {
+        val input = "1-(     -2)"
+        val expected = 3
+        val result = solution.calculate(input)
+        assertEquals(expected, result)
+    }
 }
