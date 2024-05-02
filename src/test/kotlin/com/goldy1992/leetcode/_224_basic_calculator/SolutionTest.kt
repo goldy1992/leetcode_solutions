@@ -44,4 +44,41 @@ class SolutionTest {
         val result = solution.calculate(input)
         assertEquals(expected, result)
     }
+
+    @Test
+    fun testExample6() {
+        val input = "-1-(-2)"
+        val expected = 1
+        val result = solution.calculate(input)
+        assertEquals(expected, result)
+    }
+    @Test
+    fun testExample7() {
+        val input = "- (3 + (4 + 5))"
+        val expected = -12
+        val result = solution.calculate(input)
+        assertEquals(expected, result)
+    }
+    @Test
+    fun testExample8() {
+        val input = "(7)-(0)+(4)"
+        val expected = 11
+        val result = solution.calculate(input)
+        assertEquals(expected, result)
+    }
+
+    @Test
+    fun testExample9() {
+        val input = "-(3+4)+5"
+        val expected = -2
+        val result = solution.calculate(input)
+        assertEquals(expected, result)
+    } @Test
+
+    fun testExample10() {
+        val input = "- (3 - (- (4 + 5) ) )"
+        val expected = -2
+        val result = solution.calculate(input)
+        assertEquals(expected, result)
+    }
 }
