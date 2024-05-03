@@ -40,10 +40,21 @@ object TestUtils {
         }
     }
 
-    fun createListNode(arr: IntArray): ListNode {
+    fun createReverseListNode(arr: IntArray): ListNode {
         val toReturn = ListNode(arr[arr.size - 1])
         var currentNode = toReturn
         for (n in arr.size - 2 downTo 0) {
+            val node = ListNode(arr[n])
+            currentNode.next = node
+            currentNode = node
+        }
+        return toReturn
+    }
+
+    fun createListNode(arr: IntArray): ListNode {
+        val toReturn = ListNode(arr[0])
+        var currentNode = toReturn
+        for (n in 1 until arr.size) {
             val node = ListNode(arr[n])
             currentNode.next = node
             currentNode = node
