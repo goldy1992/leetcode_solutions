@@ -1,5 +1,7 @@
 package com.goldy1992.leetcode._141_linked_list_cycle
 
+import com.goldy1992.leetcode.linked_lists.ListNode
+
 /**
  * Example:
  * var li = ListNode(5)

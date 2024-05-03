@@ -1,5 +1,8 @@
 package com.goldy1992.leetcode
 
+import com.goldy1992.leetcode.linked_lists.ListNode
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertNotNull
 import java.io.BufferedReader
 import java.io.File
 
@@ -23,5 +26,28 @@ object TestUtils {
 
     fun buildFilePath(dir: String, fileName: String) : String {
         return dir + File.separator + fileName
+    }
+
+    fun assertListNodeResult(
+        result: ListNode?,
+        expected: List<Int>
+    ) {
+        var currentNode = result
+        for (i in expected.indices) {
+            assertNotNull(currentNode?.`val`)
+            assertEquals(currentNode?.`val`, expected[i])
+            currentNode = currentNode?.next
+        }
+    }
+
+    fun createListNode(arr: IntArray): ListNode {
+        val toReturn = ListNode(arr[arr.size - 1])
+        var currentNode = toReturn
+        for (n in arr.size - 2 downTo 0) {
+            val node = ListNode(arr[n])
+            currentNode.next = node
+            currentNode = node
+        }
+        return toReturn
     }
 }

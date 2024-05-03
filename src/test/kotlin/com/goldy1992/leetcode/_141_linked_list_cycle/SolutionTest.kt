@@ -1,5 +1,6 @@
 package com.goldy1992.leetcode._141_linked_list_cycle
 
+import com.goldy1992.leetcode.linked_lists.ListNode
 import org.junit.jupiter.api.Assertions.*
 import kotlin.test.Test
 

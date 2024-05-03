@@ -1,6 +1,4 @@
-package com.goldy1992.leetcode.merge_sorted_array
-
-import kotlin.math.max
+package com.goldy1992.leetcode._88_merge_sorted_array
 
 class Solution {
     fun merge(nums1: IntArray, m: Int, nums2: IntArray, n: Int): Unit {
