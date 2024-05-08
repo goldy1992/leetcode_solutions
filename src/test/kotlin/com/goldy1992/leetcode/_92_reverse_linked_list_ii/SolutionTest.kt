@@ -29,5 +29,25 @@ class SolutionTest {
         assertListNodesEqual(expected, result)
     }
 
+    @Test
+    fun testExample3() {
+        val head = createListNode(intArrayOf(1,2,3))
+        val expected = createListNode(intArrayOf(3,2,1))
+        val left = 1
+        val right = 3
+        val result = solution.reverseBetween(head, left, right)
+        assertListNodesEqual(expected, result)
+    }
+
+    @Test
+    fun testExample4() {
+        val head = createListNode(intArrayOf(3,5))
+        val expected = createListNode(intArrayOf(5,3))
+        val left = 1
+        val right = 2
+        val result = solution.reverseBetween(head, left, right)
+        assertListNodesEqual(expected, result)
+    }
+
 
 }
