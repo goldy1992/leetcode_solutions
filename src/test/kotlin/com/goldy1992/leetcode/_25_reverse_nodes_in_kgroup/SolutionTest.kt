@@ -24,4 +24,37 @@ class SolutionTest {
         val result = solution.reverseKGroup(head, k)
         assertListNodesEqual(expected, result)
     }
+    @Test
+    fun testExample3() {
+        val head = createListNode(intArrayOf(1,2,3,4,5))
+        val k = 1
+        val expected = createListNode(intArrayOf(1,2,3,4,5))
+        val result = solution.reverseKGroup(head, k)
+        assertListNodesEqual(expected, result)
+    }
+    @Test
+    fun testExample4() {
+        val head = createListNode(intArrayOf(1,2,3,4,5))
+        val k = 5
+        val expected = createListNode(intArrayOf(5,4,3,2,1))
+        val result = solution.reverseKGroup(head, k)
+        assertListNodesEqual(expected, result)
+    }
+    @Test
+    fun testExample5() {
+        val head = createListNode(intArrayOf(1,2))
+        val k = 2
+        val expected = createListNode(intArrayOf(2,1))
+        val result = solution.reverseKGroup(head, k)
+        assertListNodesEqual(expected, result)
+    }
+
+    @Test
+    fun testExample6() {
+        val head = createListNode(intArrayOf(1,2,3,4))
+        val k = 2
+        val expected = createListNode(intArrayOf(2,1,4,3))
+        val result = solution.reverseKGroup(head, k)
+        assertListNodesEqual(expected, result)
+    }
 }
