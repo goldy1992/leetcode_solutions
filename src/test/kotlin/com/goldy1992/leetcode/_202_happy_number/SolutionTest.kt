@@ -1,6 +1,7 @@
 package com.goldy1992.leetcode._202_happy_number
 
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertFalse
+import org.junit.jupiter.api.Assertions.assertTrue
 import kotlin.test.Test
 
 class SolutionTest {

@@ -2,9 +2,9 @@ package com.goldy1992.leetcode._30_substring_with_concatentation_of_all_words
 
 import com.goldy1992.leetcode.TestUtils
 import com.goldy1992.leetcode.TestUtils.buildFilePath
-import java.io.File
 import kotlin.test.Test
-import kotlin.test.*
+import kotlin.test.assertEquals
+import kotlin.test.assertTrue
 
 class SolutionTest {
     companion object {

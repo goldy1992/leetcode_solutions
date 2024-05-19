@@ -1,7 +1,6 @@
 package com.goldy1992.leetcode._68_text_justification
 
-import com.goldy1992.leetcode._68_text_justification.Solution
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertLinesMatch
 import org.junit.jupiter.api.Test
 
 class SolutionTest {

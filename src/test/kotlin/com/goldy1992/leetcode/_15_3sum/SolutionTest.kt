@@ -1,6 +1,7 @@
 package com.goldy1992.leetcode._15_3sum
 
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertTrue
 import java.io.BufferedReader
 import java.io.File
 import kotlin.test.Test

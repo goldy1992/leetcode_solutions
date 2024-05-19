@@ -2,8 +2,6 @@ package com.goldy1992.leetcode._92_reverse_linked_list_ii
 
 import com.goldy1992.leetcode.TestUtils.assertListNodesEqual
 import com.goldy1992.leetcode.TestUtils.createListNode
-import com.goldy1992.leetcode.linked_lists.ListNode
-import org.junit.jupiter.api.Assertions.*
 import kotlin.test.Test
 
 class SolutionTest {

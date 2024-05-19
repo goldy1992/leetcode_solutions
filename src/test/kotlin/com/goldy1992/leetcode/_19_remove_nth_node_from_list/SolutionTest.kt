@@ -2,7 +2,6 @@ package com.goldy1992.leetcode._19_remove_nth_node_from_list
 
 import com.goldy1992.leetcode.TestUtils.assertListNodesEqual
 import com.goldy1992.leetcode.TestUtils.createListNode
-import org.junit.jupiter.api.Assertions.*
 import kotlin.test.Test
 
 class SolutionTest {

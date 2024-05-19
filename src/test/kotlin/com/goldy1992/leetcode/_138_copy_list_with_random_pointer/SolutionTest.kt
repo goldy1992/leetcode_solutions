@@ -1,7 +1,8 @@
 package com.goldy1992.leetcode._138_copy_list_with_random_pointer
 
 import com.goldy1992.leetcode.linked_lists.Node
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertNull
 import org.junit.jupiter.api.Test
 
 class SolutionTest {

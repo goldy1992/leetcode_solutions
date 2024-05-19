@@ -1,7 +1,5 @@
 package com.goldy1992.leetcode._54_spiral_matrix
 
-import kotlin.math.max
-
 /**
  * Example:
  * 1, 2, 3, 4,

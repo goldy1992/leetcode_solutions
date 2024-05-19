@@ -1,8 +1,8 @@
 package com.goldy1992.leetcode._1_two_sum
 
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertTrue
 import kotlin.test.Test
-import kotlin.test.assertContentEquals
 
 class SolutionTest {
     private val solution = Solution()

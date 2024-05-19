@@ -1,10 +1,8 @@
 package com.goldy1992.leetcode._76_minimum_window_substring
 
-import com.goldy1992.leetcode.TestUtils
 import com.goldy1992.leetcode.TestUtils.buildFilePath
 import com.goldy1992.leetcode.TestUtils.readFileAsString
-import com.goldy1992.leetcode._30_substring_with_concatentation_of_all_words.SolutionTest
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import kotlin.test.Test
 
 class SolutionTest {

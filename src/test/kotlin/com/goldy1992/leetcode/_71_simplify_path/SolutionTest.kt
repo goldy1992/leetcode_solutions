@@ -1,6 +1,6 @@
 package com.goldy1992.leetcode._71_simplify_path
 
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
 class SolutionTest {

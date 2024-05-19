@@ -1,7 +1,6 @@
 package com.goldy1992.leetcode._6_zigzag_conversion
 
-import com.goldy1992.leetcode._6_zigzag_conversion.Solution
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import kotlin.test.Test
 
 class SolutionTest {

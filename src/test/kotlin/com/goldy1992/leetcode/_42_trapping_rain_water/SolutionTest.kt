@@ -1,7 +1,6 @@
 package com.goldy1992.leetcode._42_trapping_rain_water
 
-import com.goldy1992.leetcode._42_trapping_rain_water.Solution
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import kotlin.test.Test
 
 class SolutionTest {

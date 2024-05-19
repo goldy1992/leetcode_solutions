@@ -1,6 +1,7 @@
 package com.goldy1992.leetcode._80_remove_duplicates_ii
 
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertArrayEquals
+import org.junit.jupiter.api.Assertions.assertEquals
 import kotlin.test.Test
 
 class SolutionTest {

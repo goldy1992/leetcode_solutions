@@ -1,8 +1,8 @@
 package com.goldy1992.leetcode
 
 import com.goldy1992.leetcode.linked_lists.ListNode
-import com.goldy1992.leetcode.linked_lists.Node
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
+import org.junit.jupiter.api.Assertions.assertNotNull
 import java.io.BufferedReader
 import java.io.File
 

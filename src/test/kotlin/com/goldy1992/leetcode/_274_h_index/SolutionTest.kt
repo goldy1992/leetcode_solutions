@@ -1,7 +1,7 @@
 package com.goldy1992.leetcode._274_h_index
 
 import com.goldy1992.leetcode.h_index.Solution
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
 class SolutionTest {

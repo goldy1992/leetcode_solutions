@@ -1,6 +1,7 @@
 package com.goldy1992.leetcode._290_word_pattern
 
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertFalse
+import org.junit.jupiter.api.Assertions.assertTrue
 import kotlin.test.Test
 
 class SolutionTest {

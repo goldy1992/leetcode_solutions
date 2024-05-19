@@ -1,6 +1,6 @@
 package com.goldy1992.leetcode._73_set_matrix_zeroes
 
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import kotlin.test.Test
 
 class SolutionTest {

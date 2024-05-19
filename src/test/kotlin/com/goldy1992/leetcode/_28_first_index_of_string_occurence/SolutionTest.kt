@@ -1,7 +1,6 @@
 package com.goldy1992.leetcode._28_first_index_of_string_occurence
 
-import com.goldy1992.leetcode._28_first_index_of_string_occurence.Solution
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
 class SolutionTest {

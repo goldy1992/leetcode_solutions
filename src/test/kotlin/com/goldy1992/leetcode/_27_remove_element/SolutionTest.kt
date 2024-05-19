@@ -1,7 +1,8 @@
 package com.goldy1992.leetcode._27_remove_element
 
 import com.goldy1992.leetcode.remove_element.Solution
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertArrayEquals
+import org.junit.jupiter.api.Assertions.assertEquals
 import kotlin.test.Test
 
 class SolutionTest {

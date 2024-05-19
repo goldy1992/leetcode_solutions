@@ -1,7 +1,6 @@
 package com.goldy1992.leetcode._238_product_of_array_except_self
 
-import com.goldy1992.leetcode._238_product_of_array_except_self.Solution
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertArrayEquals
 import org.junit.jupiter.api.Test
 
 class SolutionTest {

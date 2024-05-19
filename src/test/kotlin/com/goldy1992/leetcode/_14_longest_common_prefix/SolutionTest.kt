@@ -1,7 +1,6 @@
 package com.goldy1992.leetcode._14_longest_common_prefix
 
-import com.goldy1992.leetcode._14_longest_common_prefix.Solution
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import kotlin.test.Test
 
 class SolutionTest {

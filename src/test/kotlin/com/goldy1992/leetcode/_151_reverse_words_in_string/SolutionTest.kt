@@ -1,7 +1,6 @@
 package com.goldy1992.leetcode._151_reverse_words_in_string
 
-import com.goldy1992.leetcode._151_reverse_words_in_string.Solution
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import kotlin.test.Test
 
 class SolutionTest {

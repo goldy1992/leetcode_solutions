@@ -1,7 +1,6 @@
 package com.goldy1992.leetcode._189_rotate_array
 
-import com.goldy1992.leetcode._189_rotate_array.Solution
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertArrayEquals
 import kotlin.test.Test
 
 class SolutionTest {

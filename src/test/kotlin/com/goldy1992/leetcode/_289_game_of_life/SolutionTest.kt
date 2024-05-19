@@ -1,6 +1,6 @@
 package com.goldy1992.leetcode._289_game_of_life
 
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import kotlin.test.Test
 
 class SolutionTest {

@@ -1,11 +1,6 @@
 package com.goldy1992.leetcode._155_min_stack
 
-import com.goldy1992.leetcode._380_insert_delete_random_o1.RandomizedSet
-import com.goldy1992.leetcode._380_insert_delete_random_o1.RandomizedSetTest.Companion.CREATE
-import com.goldy1992.leetcode._380_insert_delete_random_o1.RandomizedSetTest.Companion.INSERT
-import com.goldy1992.leetcode._380_insert_delete_random_o1.RandomizedSetTest.Companion.RANDOM
-import com.goldy1992.leetcode._380_insert_delete_random_o1.RandomizedSetTest.Companion.REMOVE
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import kotlin.test.Test
 
 class MinStackTest {

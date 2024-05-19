@@ -2,7 +2,7 @@ package com.goldy1992.leetcode._128_longest_consecutive_sequence
 
 import com.goldy1992.leetcode.TestUtils
 import com.goldy1992.leetcode.TestUtils.buildFilePath
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import kotlin.test.Test
 
 class SolutionTest {

@@ -1,6 +1,6 @@
 package com.goldy1992.leetcode._452_min_arrows_burst_balloons
 
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import kotlin.test.Test
 
 class SolutionTest {

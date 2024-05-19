@@ -1,6 +1,6 @@
 package com.goldy1992.leetcode._224_basic_calculator
 
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import kotlin.test.Test
 
 class SolutionTest {

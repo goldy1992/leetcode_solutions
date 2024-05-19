@@ -1,6 +1,6 @@
 package com.goldy1992.leetcode._54_spiral_matrix
 
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import kotlin.test.Test
 
 class SolutionTest {

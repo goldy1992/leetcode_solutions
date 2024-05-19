@@ -1,7 +1,6 @@
 package com.goldy1992.leetcode._135_candy
 
-import com.goldy1992.leetcode._135_candy.Solution
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import kotlin.test.Test
 
 class SolutionTest {

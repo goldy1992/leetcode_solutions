@@ -1,6 +1,6 @@
 package com.goldy1992.leetcode._167_two_sum_ii_input_array_sorted
 
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertArrayEquals
 import kotlin.test.Test
 
 class SolutionTest {

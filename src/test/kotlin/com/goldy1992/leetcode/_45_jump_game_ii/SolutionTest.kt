@@ -1,7 +1,6 @@
 package com.goldy1992.leetcode._45_jump_game_ii
 
-import com.goldy1992.leetcode._45_jump_game_ii.Solution
-import org.junit.jupiter.api.Assertions.*
+import org.junit.jupiter.api.Assertions.assertEquals
 import org.junit.jupiter.api.Test
 
 class SolutionTest {
