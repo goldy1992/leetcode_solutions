@@ -1,8 +1,7 @@
 package com.goldy1992.leetcode
 
 import com.goldy1992.leetcode.linked_lists.ListNode
-import org.junit.jupiter.api.Assertions.assertEquals
-import org.junit.jupiter.api.Assertions.assertNotNull
+import org.junit.jupiter.api.Assertions.*
 import java.io.BufferedReader
 import java.io.File
 
@@ -63,13 +62,16 @@ object TestUtils {
     }
 
     fun assertListNodesEqual(expected: ListNode?, result: ListNode?) {
-            var currentExpected: ListNode? = expected
-            var currentResult: ListNode? = result
-            while (currentExpected != null) {
-                assertEquals(currentExpected.`val`, currentResult!!.`val`)
-                currentExpected = currentExpected.next
-                currentResult = currentResult.next
+        if (expected == null) {
+            assertNull(result)
+        }
+        var currentExpected: ListNode? = expected
+        var currentResult: ListNode? = result
+        while (currentExpected != null) {
+            assertEquals(currentExpected.`val`, currentResult!!.`val`)
+            currentExpected = currentExpected.next
+            currentResult = currentResult.next
 
-            }
         }
     }
+}
