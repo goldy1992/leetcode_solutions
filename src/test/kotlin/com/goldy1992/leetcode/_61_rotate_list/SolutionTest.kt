@@ -33,4 +33,32 @@ class SolutionTest {
         val result = solution.rotateRight(input, k)
         assertListNodesEqual(expected, result)
     }
+
+    @Test
+    fun testExample4() {
+        val input = null
+        val k = 0
+        val expected = null
+        val result = solution.rotateRight(input, k)
+        assertListNodesEqual(expected, result)
+    }
+    @Test
+    fun testExample5() {
+        val input = createListNode(intArrayOf(1,2))
+
+        val k = 1
+        val expected = createListNode(intArrayOf(2,1))
+        val result = solution.rotateRight(input, k)
+        assertListNodesEqual(expected, result)
+    }
+
+    @Test
+    fun testExample6() {
+        val input = createListNode(intArrayOf(1,2,3))
+
+        val k = 2000000000
+        val expected = createListNode(intArrayOf(2,3,1))
+        val result = solution.rotateRight(input, k)
+        assertListNodesEqual(expected, result)
+    }
 }
