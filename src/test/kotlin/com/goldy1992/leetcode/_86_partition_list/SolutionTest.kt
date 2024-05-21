@@ -18,9 +18,28 @@ class SolutionTest {
     @Test
     fun testExample2() {
         val input = createListNode(intArrayOf(2,1))
-        val x = 3
+        val x = 2
         val expected = createListNode(intArrayOf(1,2))
         val result = solution.partition(input, x)
         assertListNodesEqual(expected, result)
     }
+
+    @Test
+    fun testExample3() {
+        val input = createListNode(intArrayOf(3,3,4))
+        val x = 2
+        val expected = createListNode(intArrayOf(3,3,4))
+        val result = solution.partition(input, x)
+        assertListNodesEqual(expected, result)
+    }
+
+    @Test
+    fun testExample4() {
+        val input = createListNode(intArrayOf(1,2,3))
+        val x = 7
+        val expected = createListNode(intArrayOf(1,2,3))
+        val result = solution.partition(input, x)
+        assertListNodesEqual(expected, result)
+    }
+
 }
